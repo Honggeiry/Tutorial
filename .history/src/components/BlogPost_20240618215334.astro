@@ -1,0 +1,4 @@
+---
+const allPosts = await Astro.glob('./posts/*.md');
+---
+{<li><a href={post.url}>{post.frontmatter.title}</a></li>}

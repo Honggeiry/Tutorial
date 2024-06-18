@@ -1,0 +1,4 @@
+---
+const { url, username } = Astro.props;
+---
+{allPosts.map((post) => <li><a href={post.url}>{post.frontmatter.title}</a></li>)}
