@@ -5,7 +5,10 @@ const pageTitle = "About Me";
 
 <html lang="en">
   <BaseLayout pageTitle={pageTitle}>
-  
+    <h2>My beautiful wife - Akechi</h2>
+  </BaseLayout>
+  <body>
+    <Header />
     <h1>明明症患者的 blog</h1>
     <h1>Akechi Daisuki</h1>
     <h1>{pageTitle}</h1>
@@ -15,5 +18,9 @@ const pageTitle = "About Me";
       <li><a href="/posts/post-2/">Post 2</a></li>
       <li><a href="/posts/post-3/">Post 3</a></li>
     </ul>
-  </BaseLayout>
+    <Footer />
+    <script>
+      import "../scripts/menu.js";
+    </script>
+  </body>
 </html>
