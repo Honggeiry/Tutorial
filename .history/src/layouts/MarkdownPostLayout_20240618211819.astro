@@ -5,5 +5,4 @@ const { frontmatter } = Astro.props;
 <p>Written by {frontmatter.author}</p>
 <p>Published on: {frontmatter.pubDate.toString().slice(0,10)}</p>
 <p>{frontmatter.description}</p>
-<img src={frontmatter.image.url} width="300" alt={frontmatter.image.alt} />
 <slot />
