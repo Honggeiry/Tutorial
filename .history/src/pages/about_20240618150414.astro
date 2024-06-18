@@ -2,24 +2,42 @@
 const pageTitle = "About Me";
 
 const identity = {
-  firstName: "Hongge",
-  country: "China",
-  occupation: "Coder",
-  hobbies: ["Akechi", "Akechi", "Akechi again"],
+  firstName: "Sarah",
+  country: "Canada",
+  occupation: "Technical Writer",
+  hobbies: ["photography", "birdwatching", "baseball"],
 };
 
-const skills = [
-  "背诵明明经",
-  "买谷子",
-  "买本",
-  "打游戏",
-  "看动漫",
-  "和明明说晚安",
-];
+const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
 
-const happy = true;
-const finished = false;
-const goal = 3;
+Red-Black Tree Deletion
+
+Thursday, May 9, 2024
+13:45
+
+
+
+
+
+
+
+
+Case 1:
+If it's red, simply delete the node
+
+Case 2:
+If it's black, then see the sibling, 
+ if the sibling is red, rotate;
+ if's the sibling is black and it has red child, rotate  (Case 3 down)
+
+Case 3 up:
+If the sibling is black and its children are both black as well, recolor the sibling
+
+
+Binary Search Tree:
+The successor of a node x is the node with the smallest key greater than x
+The predecessor of a node x is the node with the greatest key smaller than x
+
 ---
 
 <html lang="en">
@@ -39,18 +57,6 @@ const goal = 3;
     <h2>我很喜欢明智吾郎</h2>
 
     <p>我真的有明明症</p>
-    {happy && <p>I am happy to love Akechi!</p>}
-
-    {finished && <p>I finished this tutorial!</p>}
-
-    {
-      goal === 3 ? (
-        <p>My goal is to finish in 3 days.</p>
-      ) : (
-        <p>My goal is not 3 days.</p>
-      )
-    }
-
     <p>Here are a few facts about me:</p>
     <ul>
       <li>My name is {identity.firstName}.</li>

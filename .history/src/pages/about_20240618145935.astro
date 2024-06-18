@@ -1,25 +1,5 @@
 ---
 const pageTitle = "About Me";
-
-const identity = {
-  firstName: "Hongge",
-  country: "China",
-  occupation: "Coder",
-  hobbies: ["Akechi", "Akechi", "Akechi again"],
-};
-
-const skills = [
-  "背诵明明经",
-  "买谷子",
-  "买本",
-  "打游戏",
-  "看动漫",
-  "和明明说晚安",
-];
-
-const happy = true;
-const finished = false;
-const goal = 3;
 ---
 
 <html lang="en">
@@ -39,18 +19,6 @@ const goal = 3;
     <h2>我很喜欢明智吾郎</h2>
 
     <p>我真的有明明症</p>
-    {happy && <p>I am happy to love Akechi!</p>}
-
-    {finished && <p>I finished this tutorial!</p>}
-
-    {
-      goal === 3 ? (
-        <p>My goal is to finish in 3 days.</p>
-      ) : (
-        <p>My goal is not 3 days.</p>
-      )
-    }
-
     <p>Here are a few facts about me:</p>
     <ul>
       <li>My name is {identity.firstName}.</li>
