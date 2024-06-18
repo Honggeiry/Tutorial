@@ -19,7 +19,9 @@ const pageTitle = 'Home Page';
     <h1>提问：我最喜欢哪个游戏角色?</h1>
     <Footer />
     <script>
-      import "../scripts/menu.js";
+      document.querySelector('.hamburger').addEventListener('click', () => {
+        document.querySelector('.nav-links').classList.toggle('expanded');
+      });
     </script>
   </body>
 </html>
