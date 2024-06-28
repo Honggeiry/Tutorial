@@ -82,10 +82,14 @@ h1 {
 }
 
 html.dark {
-  background-color: #0d0950;
+  background-color: #000000;
   color: #fff;
 }
 
 .dark .nav-links a {
   color: #fff;
+}
+
+.dark h1 {
+  color: rgb(236, 152, 222);
 }

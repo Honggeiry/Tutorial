@@ -1,11 +1,10 @@
 ---
-
+import i18next, { t } from "i18next";
 ---
 
 <div class="nav-links">
-  <a href="/">Home</a>
-  <a href="/about">About</a>
-  <a href="/blog">Blog</a>
-  <a href="/tags">Tags</a>
-  <a href="/test">Test</a>
+  <a href="/">{t("nav-links.home")}</a>
+  <a href="/about">{t("nav-links.about")}</a>
+  <a href="/blog">{t("nav-links.blog")}</a>
+  <a href="/tags">{t("nav-links.tags")}</a>
 </div>

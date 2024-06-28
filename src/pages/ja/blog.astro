@@ -1,11 +1,11 @@
 ---
 import { changeLanguage } from "i18next";
-import BaseLayout from "../layouts/BaseLayout.astro";
-import BlogPost from "../components/BlogPost.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import BlogPost from "../../components/BlogPost.astro";
 
-changeLanguage("en");
+changeLanguage("ja");
 
-const allPosts = await Astro.glob("./posts/*.md");
+const allPosts = await Astro.glob("../posts/*.md");
 const pageTitle = "About Me";
 ---
 
